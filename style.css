@@ -1,0 +1,450 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.header {
+  padding-top: 35px;
+
+}
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* Header Top */
+
+.header__top{
+  display: flex;
+  justify-content: space-between;
+}
+.top__leng {
+  display: flex;
+  align-items: center;
+}
+.leng__item {
+  margin-right: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 10px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.active{
+  background-color: #000;
+  padding: 2px 6px;
+  text-align: center;
+  color: #fff;
+
+}
+.leng__item:active{
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+}
+.header__ordering {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: underline;
+  font-family: 'Noto Sans JP', sans-serif;
+  cursor: pointer;
+}
+/* ================================================ */
+
+/* Header bottom*/
+.header__bottom {
+  display: flex;
+  align-items: center;
+  margin: -30px 0 0 0;
+
+}
+.header__bottom__column {
+  flex: 0 0 33.333%;
+}
+.header__bottom__menu {
+
+}
+.header__bottom__menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header__bottom__menu__link {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000000;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.header__bottom__menu__list li{
+
+}
+
+.header__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  /* display: flex;
+  flex-direction: column; */
+}
+.header__logo__text {
+  display: block;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 8px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.0em;
+  color: #000000;
+}
+.header__logo__image {
+  display: inline-block;
+  margin: 13px 0 22px 0;
+}
+/* ================================================ */
+
+/* Private catering */
+.btn{
+ 
+}
+.private {
+  display: flex;
+  background-color: #000;
+}
+.private__column {
+  flex: 0 0 50%;
+
+}
+.private__image {
+margin-left: 250px;
+}
+.private__body {
+  max-width: 400px;
+  padding: 75px 0 74px 60px;
+}
+.private__body__title {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.private__body__text {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 40px 0 40px 0 ;
+}
+.private__body__buttons {
+
+}
+.private__body__buttons__item {
+  padding: 18px 35px;
+  background-color:#fff  ;
+  color: #000;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+}
+.private__body__buttons__link {
+  margin-left: 30px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fffffe;
+}
+/* ================================================ */
+/* Products */
+.products {
+  padding: 75px 0;
+
+}
+.products__body{
+  display: flex;
+}
+.products__column {
+  flex: 0 0 25%;
+}
+.products__item {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  
+}
+.products__item__image {
+  display: block;
+  margin-bottom: 25px;
+
+  
+}
+.products__item__title {
+  display: block; 
+  max-width: 185px;
+  margin-bottom: 30px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+.products__item__text {
+  flex: 1 1 auto;
+  max-width: 185px;
+  margin-bottom: 40px;
+  font-size: 15px;
+line-height: 25px;
+font-weight: 400;
+color: #000000;
+font-family: 'Noto Sans JP', sans-serif;
+
+}
+.products__item__btn {
+  display: inline-block;
+  padding: 15px 50px;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 30px;
+  
+}
+.products__item__link {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+/* ================================================ */
+
+/* US */
+
+
+.us {
+  display: flex;  
+}
+.us__column {
+  flex: 0 0 50%;
+
+}
+.us__text {
+  text-align: right;
+  background-color: #000;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 40px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  padding: 60px 50px 70px 0 ;
+}
+.us__image {
+  height: 150px;
+
+  background-image: url(/img/layer_3_1396.png) ;
+}
+
+/* ================================================ */
+
+/* WHY */
+
+.why {
+  background-color: #ebebeb;
+  padding: 50px 0;
+  
+}
+.wr{
+  display: flex;
+  margin-bottom: 50px;
+  
+
+
+}
+.why__column {
+
+}
+.why__item {
+  display: flex;
+  margin-left: 50px;  
+}
+.why__item:first-child{
+  margin-left: 0;
+}
+.why__image {
+  flex: 0 0 100px;
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  padding: 20px;
+}
+.why__body {
+  flex: 1 1 100%;
+}
+.why__title {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.why__text {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #000000;
+}
+/* ================================================ */
+/* SAY */
+.say {
+  padding: 85px 0;
+}
+.say__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.say__l {
+}
+.say__title {
+  font-size: 50px;
+line-height: 25px;
+font-weight: 600;
+text-transform: uppercase;
+color: #000000;
+margin-bottom: 35px;
+}
+
+.say__adress {
+  display: inline-block;
+  font-size: 15px;
+font-weight: 400;
+color: #000000;
+margin-bottom: 45px;
+background-image: url(/img/adress.jpg) left no-repead ;
+
+
+}
+
+.say__telefon {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+}
+.say__r {
+ margin-top: 71px; 
+}
+.say__email {
+margin-bottom: 35px;
+
+}
+.say__soz {
+  display: flex;
+}
+.say__icon {
+  margin-right: 40px;
+}
+
+/* ================================================ */
